@@ -1,0 +1,21 @@
+{
+  "product": {
+    "repository": "ai-prompt-issue-mobile-triage",
+    "title": "AIプロンプト・Issueモバイル棚卸し"
+  },
+  "items": [
+    {
+      "id": "ai-prompt-issue-mobile-triage-happy",
+      "title": "AIプロンプト・Issueモバイル棚卸し happy",
+      "status": "ready",
+      "tags": [
+        "androidapp"
+      ],
+      "promptPath": "samples/happy.prompt.md",
+      "issueRef": "#1",
+      "triageStatus": "ready",
+      "owner": "closed-alpha",
+      "syncNote": "AIプロンプト・Issueモバイル棚卸し の確認観点"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ai-prompt-issue-mobile-triage",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "AIプロンプト・Issueモバイル棚卸し の検証ハーネス付きclosed alpha実装",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs && node tools/qcds-evaluate.mjs --allow-missing-zip && node tools/package-docs.mjs && node tools/qcds-evaluate.mjs && node tools/package-docs.mjs && node tools/mojibake-check.mjs",
+    "validate": "npm test",
+    "start": "node src/cli.mjs samples/sample-input.json dist/run"
+  },
+  "keywords": [
+    "androidapp",
+    "ai-prompt-issue-mobile-triage",
+    "qcds",
+    "closed-alpha",
+    "representative-suite"
+  ],
+  "license": "MIT"
+}
