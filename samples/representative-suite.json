@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "AIプロンプト・Issueモバイル棚卸し の正常入力を検証する",
+    "items": [
+      {
+        "id": "ai-prompt-issue-mobile-triage-happy",
+        "title": "AIプロンプト・Issueモバイル棚卸し happy",
+        "status": "ready",
+        "tags": [
+          "androidapp"
+        ],
+        "promptPath": "samples/happy.prompt.md",
+        "issueRef": "#1",
+        "triageStatus": "ready",
+        "owner": "closed-alpha",
+        "syncNote": "AIプロンプト・Issueモバイル棚卸し の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "ai-prompt-issue-mobile-triage-missing",
+        "status": "ready",
+        "tags": [
+          "androidapp"
+        ],
+        "promptPath": "samples/missing.prompt.md",
+        "issueRef": "#1",
+        "triageStatus": "ready",
+        "owner": "closed-alpha",
+        "syncNote": "AIプロンプト・Issueモバイル棚卸し の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "ai-prompt-issue-mobile-triage-warning",
+        "title": "AIプロンプト・Issueモバイル棚卸し warning",
+        "status": "ready",
+        "tags": [
+          "androidapp"
+        ],
+        "promptPath": "samples/warning.prompt.md",
+        "issueRef": "#1",
+        "triageStatus": "ready",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "ai-prompt-issue-mobile-triage-happy",
+        "title": "AIプロンプト・Issueモバイル棚卸し happy",
+        "status": "ready",
+        "tags": [
+          "androidapp"
+        ],
+        "promptPath": "samples/happy.prompt.md",
+        "issueRef": "#1",
+        "triageStatus": "ready",
+        "owner": "closed-alpha",
+        "syncNote": "AIプロンプト・Issueモバイル棚卸し の確認観点"
+      },
+      {
+        "id": "ai-prompt-issue-mobile-triage-missing",
+        "status": "ready",
+        "tags": [
+          "androidapp"
+        ],
+        "promptPath": "samples/missing.prompt.md",
+        "issueRef": "#1",
+        "triageStatus": "ready",
+        "owner": "closed-alpha",
+        "syncNote": "AIプロンプト・Issueモバイル棚卸し の確認観点"
+      },
+      {
+        "id": "ai-prompt-issue-mobile-triage-warning",
+        "title": "AIプロンプト・Issueモバイル棚卸し warning",
+        "status": "ready",
+        "tags": [
+          "androidapp"
+        ],
+        "promptPath": "samples/warning.prompt.md",
+        "issueRef": "#1",
+        "triageStatus": "ready",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "repository": "ai-prompt-issue-mobile-triage",
+  "title": "AIプロンプト・Issueモバイル棚卸し",
+  "domain": "AndroidApp",
+  "hostApp": null,
+  "rank": 79,
+  "tier": "P2",
+  "ideaNo": 7,
+  "overview": "AI指示文、Codexテンプレ、GitHub Issueメモを外出先で整理する。 入力、確認、履歴保存、次アクションを同じ作業単位で扱えるようにする。",
+  "problem": "PC前でしか次の作業候補やプロンプトを整えられない。",
+  "differentiation": "スマホでは選別とメモに絞り、実行はPC作業へ渡す。",
+  "publish": "Google Play",
+  "surface": "AndroidApp product spec + CLI validation core",
+  "entity": "mobile triage item",
+  "requiredFields": [
+    "id",
+    "title",
+    "promptPath",
+    "issueRef",
+    "triageStatus",
+    "owner"
+  ],
+  "warningField": "syncNote",
+  "qcdsManualTestCap": "S-",
+  "qcdsTarget": "A-",
+  "benchmarkRepos": [
+    "Sunmax0731/project-portfolio-generator",
+    "Sunmax0731/release-output-check-flow",
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ]
+}
