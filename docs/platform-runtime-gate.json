@@ -1,0 +1,14 @@
+{
+  "product": "ai-prompt-issue-mobile-triage",
+  "title": "AIプロンプト・Issueモバイル棚卸し",
+  "domain": "AndroidApp",
+  "ideaNo": 7,
+  "platformType": "android-emulator",
+  "expectedPublicTarget": "Google Play",
+  "browser": null,
+  "android": {
+    "packageName": "com.sunmax0731.aipromptissuemobiletriage",
+    "evidence": "dist/android-emulator-result.json"
+  },
+  "evidence": "dist/platform-runtime-gate-result.json"
+}

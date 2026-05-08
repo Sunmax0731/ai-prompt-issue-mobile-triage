@@ -1,0 +1,18 @@
+{
+  "product": "ai-prompt-issue-mobile-triage",
+  "packageName": "com.sunmax0731.aipromptissuemobiletriage",
+  "build": {
+    "apk": "dist/ai-prompt-issue-mobile-triage-debug.apk",
+    "method": "android-sdk-aapt2-d8-apksigner"
+  },
+  "launch": {
+    "started": true,
+    "activity": ".MainActivity",
+    "amStartStatusOk": true,
+    "pid": "6817"
+  },
+  "emulator": {
+    "avd": "CodexApi30"
+  },
+  "manualTest": "not-run-by-codex"
+}
